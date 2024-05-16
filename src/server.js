@@ -2,16 +2,15 @@ const fastify = require('fastify');
 const dotenv = require('dotenv');
 const errorHandler = require('./utils/errorHandler');
 const userRoutes = require('./routes/userRoutes');
-const swaggerConfig = require('./swagger')
 
 
 dotenv.config();
 
 const app = fastify();
 
-app.register(require('@fastify/swagger'), swaggerConfig)
+app.register(require('@fastify/swagger'))
 
-app.register(require('@fastify/swagger-ui'), swaggerConfig)
+app.register(require('@fastify/swagger-ui'))
 
 
 // routes
