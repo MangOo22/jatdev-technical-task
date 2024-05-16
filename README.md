@@ -29,7 +29,7 @@ http://localhost:3000/documentation
    ![alt text](images/createUser2.png)
 
 
-- `POST: /users/:id`: 
+- `GET: /users/:id`: 
    ![alt text](images/getuser.png)
 
 
